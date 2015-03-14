@@ -1,0 +1,23 @@
+
+body {
+	margin:0;
+	padding:0;
+}
+.responsive-wrapper {
+	  width: 100%;
+	  position: fixed;
+	  bottom: 0px;
+	  margin: 0px;
+	  padding: 0px;
+	  left: 0px;
+
+	-webkit-box-sizing: border-box;
+	-khtml-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.theme-title {
+	font: 32px 'Source Sans Pro', sans-serif;
+	text-align: center;
+}
