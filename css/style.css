@@ -21,3 +21,13 @@ body {
 	font: 32px 'Source Sans Pro', sans-serif;
 	text-align: center;
 }
+
+.maintitle {
+	vertical-align:middle;
+	text-align:center;
+}
+
+div.maintitle {
+	margin-top: 25%;
+	margin-bottom:25%;
+}
