@@ -12,6 +12,11 @@
 @charset "UTF-8";
 
 @font-face {
+font-family: CabinSketch;
+src: url("../fonts/CabinSketch-Bold.otf") format("opentype");
+}
+
+@font-face {
 	/* Entypo pictograms by Daniel Bruce — www.entypo.com */
 	font-family: 'flat-audio';
 	src: url("font/flat-audio.eot");
@@ -108,7 +113,7 @@
 .jp-flat-audio .jp-button:before {
 	display: block;
 
-	font-family: 'flat-audio';
+	
 	font-style: normal;
 	font-weight: normal;
 	text-decoration: none;

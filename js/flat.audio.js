@@ -78,7 +78,8 @@ jQuery(document).ready(function() {
 			swfPath:	"/Users/ndeprey/bday/js/jquery.jplayer.swf",
 			playlistOptions: {
 			    autoPlay: true,
-			    enableRemoveControls: true
+			    enableRemoveControls: true,
+			    shuffleOnLoop: true
 			  	},
 			supplied:	"mp3",
 			wmode:		"window",

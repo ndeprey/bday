@@ -1,8 +1,36 @@
 
+@font-face {
+font-family: CabinSketch;
+src: url("../fonts/CabinSketch-Bold.otf") format("opentype");
+}
+
+@font-face {
+	font-family: driftwood;
+	src: url("../fonts/driftwood.ttf") format("opentype");
+}
+
+@font-face {
+	font-family: Pinewood;
+	src: url("../fonts/Pinewood.ttf") format("opentype");
+}
+
+
 body {
 	margin:0;
 	padding:0;
 }
+
+#slideshow, img.bgM {
+        min-height: 100%;
+        min-width: 1024px;
+        width: 100%;
+        height: auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index:-9999;
+}
+
 .responsive-wrapper {
 	  width: 100%;
 	  position: fixed;
@@ -20,14 +48,67 @@ body {
 .theme-title {
 	font: 32px 'Source Sans Pro', sans-serif;
 	text-align: center;
+
 }
 
 .maintitle {
 	vertical-align:middle;
 	text-align:center;
+
 }
 
-div.maintitle {
-	margin-top: 25%;
+@media only screen and (max-width: 1000px) {
+	#maintitle {
+		font-size: 40px;
+		margin-left: 60px;
+		margin-right: 60px;
+		margin-top: 120px;
+	}
+}
+
+
+
+div.photocred {
+	width: 200px;
+	position:fixed;
+	right:2px;
+	top:2px;
+	font-family: 'Source Sans Pro'; sans-serif;
+	font-size: 12px;
+	color: white;
+	text-align: right;
+}
+
+a.photocred {
+	color:black;
+}
+
+#maintitle {
+	margin-top: 15%;
 	margin-bottom:25%;
+	font-family:Pinewood;
+	font-size: 80px;
+	color: white;
+
+}
+
+@media only screen and (max-width: 1000px) {
+	#maintitle {
+		font-size: 40px;
+		margin-left: 60px;
+		margin-right: 60px;
+		margin-top: 120px;
+	}
+}
+
+h1 {
+	background: url('../img/wood-pattern.jpg');
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	/*text-shadow: 2px 2px;*/
+}
+
+span.jp-title{
+	margin-left:10px;
+	position:relative;
 }

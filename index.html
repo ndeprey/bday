@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Flat Audio</title>
+<title>Happy Birthday Dan DePrey</title>
 
 <link href="css/flat.audio.css" rel="stylesheet" type="text/css" />
 <link href="css/style.css" rel="stylesheet" type="text/css" />
@@ -12,6 +12,8 @@
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/jquery.jplayer.js"></script>
 <script type="text/javascript" src="js/jquery.easing.js"></script>
+<!-- <script type="text/javascript" src="js/slideshow.js"></script> -->
+<script type="text/javascript" src="js/jquery.cycle.all.js"></script>
 <!-- <script type="text/javascript" src="js/flat.audio.js"></script> -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jplayer/2.9.2/add-on/jplayer.playlist.js"></script>
 
@@ -19,126 +21,173 @@
 
 </head>
 <body>
-<div class="maintitle">
-	<h1>Happy Birthday Dad</h1>
+<div id="slideshow">
+	<img src="img/all-roads.jpg" class="bgM"/>
+	<img src="img/ice-forest.jpg" class="bgM"/>
+	<img src="img/paddling.jpg" class="bgM"/>
+	<img src="img/summer-sails.jpg" class="bgM"/>
+	<img src="img/daytime_light.jpg" class="bgM"/>
+	<img src="img/springtime.jpg" class="bgM"/>
+	<img src="img/winter-fleet.jpg" class="bgM"/>
 </div>
 
-<div class="responsive-wrapper">
+<script type="text/javascript">
+	$(document).ready(function() {
+				$('#slideshow').cycle({
+				fx: 'fade',
+				pager: '#smallnav', 
+				pause:   3, 
+				speed: 1800,
+				timeout:  500 
+			});			
+		});
+</script>
 
-<script>
-	jQuery(document).ready(function(){
-		
-		
-		new jPlayerPlaylist({
-			jPlayer: "#jquery_jplayer_audio_1",
-			cssSelectorAncestor: "#jp_container_audio_1"
-			}, [
-				{
-					title:	"Where I End",
-					artist:	"Big Hush",
-					mp3:	"http://popplers5.bandcamp.com/download/track?enc=mp3-128&fsig=1412f59de52b0f46e0f7be114f948e86&id=1465865254&stream=1&ts=1425943581.0"
-				},
-				{
-					title:	"All the Joy",
-					artist:	"Moonchild",
-					mp3:	"https://popplers5.bandcamp.com/download/track?enc=mp3-128&fsig=aad3d35033dd901e4299eec4176f900e&id=4202601355&stream=1&ts=1426044258.0"
-				},
-				{
-					title:	"Junior June",
-					artist:	"Redline Graffiti",
-					mp3:	"https://popplers5.bandcamp.com/download/track?enc=mp3-128&fsig=9e6a201daaa2380ce9c82a280621f18f&id=1804432014&stream=1&ts=1426044363.0"
-				},
-				{
-					title:  "What are you saying",
-					artist: "Young Rapids",
-					mp3:    "http://popplers5.bandcamp.com/download/track?enc=mp3-128&fsig=83fc309074587551faecf5c6f7d041f7&id=94248986&stream=1&ts=1425955348.0"
-				},
-				{
-					title:  "Medium Rare",
-					artist: "Cigarette",
-					mp3:    "http://popplers5.bandcamp.com/download/track?enc=mp3-128&fsig=1144302a8a8587e779caa9e4036b461e&id=2628448993&stream=1&ts=1425692001.0"
-				},
-				{
-					title:  "Trees Walk",
-					artist: "UVF Rays",
-					mp3:    "http://popplers5.bandcamp.com/download/track?enc=mp3-128&fsig=21a43be96f56341e998273918f163057&id=1389455017&stream=1&ts=1425797879.0"
-				},
-				{
-					title:  "Please Louise",
-					artist: "Nighttime Adventure Society",
-					mp3:    "https://popplers5.bandcamp.com/download/track?enc=mp3-128&fsig=2b339da47c4279ab5c98e4d23421a4a5&id=4188101149&stream=1&ts=1426052528.0"
-				},
-				{
-					title:  "Waste You",
-					artist: "Cigarette",
-					mp3:    "http://popplers5.bandcamp.com/download/track?enc=mp3-128&fsig=cd2547428bb30b2c6e7c5329130f96f5&id=2633905602&stream=1&ts=1425692001.0"
-				},
-				{
-					title:  "Honey Haven't I",
-					artist: "Louis Weeks",
-					mp3:    "https://popplers5.bandcamp.com/download/track?enc=mp3-128&fsig=300069d44059cae30d507e899fabefad&id=1947897822&stream=1&ts=1426053038.0"
-				},
-				{
-					title:	"For Our Sake",
-					artist:	"Stranger in the Alps",
-					mp3:	"http://popplers5.bandcamp.com/download/track?enc=mp3-128&fsig=dd64db83f953c709a5862e1ce9f0cfd9&id=2565753348&stream=1&ts=1425839656.0"
-				},
-				{
-					title:  "Electric Fireside",
-					artist: "UVF Rays",
-					mp3:    "http://popplers5.bandcamp.com/download/track?enc=mp3-128&fsig=4c21f423e56410ba8e6e148ff544ae7f&id=226884098&stream=1&ts=1425797879.0"
-				},
-				{	
-					title:  "Madonna of the Wasps",
-					artist: "Big Hush",
-					mp3:    "https://popplers5.bandcamp.com/download/track?enc=mp3-128&fsig=4688bef4199ba69b0cbdde303c5bf07c&id=863788278&stream=1&ts=1426052744.0"
-				},
-				{
-					title:  "I Can't Tell if All this is Real",
-					artist: "UVF Rays",
-					mp3:    "http://popplers5.bandcamp.com/download/track?enc=mp3-128&fsig=4c21f423e56410ba8e6e148ff544ae7f&id=226884098&stream=1&ts=1425797879.0"
-				},
-				{
-					title:  "Calder",
-					artist: "Louis Weeks",
-					mp3:    "https://popplers5.bandcamp.com/download/track?enc=mp3-128&fsig=3c9a63be645400585553a1f3cb3ed159&id=3868611384&stream=1&ts=1426053038.0"
-				}
-			], {
-			swfPath:	"/Users/ndeprey/bday/js/jquery.jplayer.swf",
-			supplied:	"mp3",
-			wmode:		"window"
+
+	<div class="photocred">
+		<a class="photocred" href="http://www.lukecollinsphotography.com/" target="_blank">Photos Courtesy of Luke Collins Photography</a>
+	</div>
+	<div class="maintitle">
+		<h1 id="maintitle">Happy Birthday Dad</h1>
+	</div>
+
+	<div class="responsive-wrapper">
+
+	<script>
+		jQuery(document).ready(function(){
+			
+			
+			var myPlaylist = new jPlayerPlaylist({
+				jPlayer: "#jquery_jplayer_audio_1",
+				cssSelectorAncestor: "#jp_container_audio_1"
+				}, [
+					{
+						title:	"Where I End",
+						artist:	"Big Hush",
+						mp3:	"http://popplers5.bandcamp.com/download/track?enc=mp3-128&fsig=1412f59de52b0f46e0f7be114f948e86&id=1465865254&stream=1&ts=1425943581.0"
+					},
+					{
+						title:	"All the Joy",
+						artist:	"Moonchild",
+						mp3:	"https://popplers5.bandcamp.com/download/track?enc=mp3-128&fsig=aad3d35033dd901e4299eec4176f900e&id=4202601355&stream=1&ts=1426044258.0"
+					},
+					{
+						title:	"Junior June",
+						artist:	"Redline Graffiti",
+						mp3:	"https://popplers5.bandcamp.com/download/track?enc=mp3-128&fsig=9e6a201daaa2380ce9c82a280621f18f&id=1804432014&stream=1&ts=1426044363.0"
+					},
+					{
+						title:  "What are you saying",
+						artist: "Young Rapids",
+						mp3:    "http://popplers5.bandcamp.com/download/track?enc=mp3-128&fsig=83fc309074587551faecf5c6f7d041f7&id=94248986&stream=1&ts=1425955348.0"
+					},
+					{
+						title:  "Medium Rare",
+						artist: "Cigarette",
+						mp3:    "http://popplers5.bandcamp.com/download/track?enc=mp3-128&fsig=1144302a8a8587e779caa9e4036b461e&id=2628448993&stream=1&ts=1425692001.0"
+					},
+					{
+						title:  "Trees Walk",
+						artist: "UVF Rays",
+						mp3:    "http://popplers5.bandcamp.com/download/track?enc=mp3-128&fsig=21a43be96f56341e998273918f163057&id=1389455017&stream=1&ts=1425797879.0"
+					},
+					{
+						title:  "Please Louise",
+						artist: "Nighttime Adventure Society",
+						mp3:    "https://popplers5.bandcamp.com/download/track?enc=mp3-128&fsig=2b339da47c4279ab5c98e4d23421a4a5&id=4188101149&stream=1&ts=1426052528.0"
+					},
+					{
+						title:  "Waste You",
+						artist: "Cigarette",
+						mp3:    "http://popplers5.bandcamp.com/download/track?enc=mp3-128&fsig=cd2547428bb30b2c6e7c5329130f96f5&id=2633905602&stream=1&ts=1425692001.0"
+					},
+					{
+						title:  "Honey Haven't I",
+						artist: "Louis Weeks",
+						mp3:    "https://popplers5.bandcamp.com/download/track?enc=mp3-128&fsig=300069d44059cae30d507e899fabefad&id=1947897822&stream=1&ts=1426053038.0"
+					},
+					{
+						title:	"For Our Sake",
+						artist:	"Stranger in the Alps",
+						mp3:	"http://popplers5.bandcamp.com/download/track?enc=mp3-128&fsig=dd64db83f953c709a5862e1ce9f0cfd9&id=2565753348&stream=1&ts=1425839656.0"
+					},
+					{
+						title:  "Electric Fireside",
+						artist: "UVF Rays",
+						mp3:    "http://popplers5.bandcamp.com/download/track?enc=mp3-128&fsig=4c21f423e56410ba8e6e148ff544ae7f&id=226884098&stream=1&ts=1425797879.0"
+					},
+					{	
+						title:  "Madonna of the Wasps",
+						artist: "Big Hush",
+						mp3:    "https://popplers5.bandcamp.com/download/track?enc=mp3-128&fsig=4688bef4199ba69b0cbdde303c5bf07c&id=863788278&stream=1&ts=1426052744.0"
+					},
+					{
+						title:  "I Can't Tell if All this is Real",
+						artist: "UVF Rays",
+						mp3:    "http://popplers5.bandcamp.com/download/track?enc=mp3-128&fsig=4c21f423e56410ba8e6e148ff544ae7f&id=226884098&stream=1&ts=1425797879.0"
+					},
+					{
+						title:  "Calder",
+						artist: "Louis Weeks",
+						mp3:    "https://popplers5.bandcamp.com/download/track?enc=mp3-128&fsig=3c9a63be645400585553a1f3cb3ed159&id=3868611384&stream=1&ts=1426053038.0"
+					}
+				], {
+				swfPath:	"/Users/ndeprey/bday/js/jquery.jplayer.swf",
+				supplied:	"mp3",
+				wmode:		"window",
+
+				playlistOptions: {
+				    enableRemoveControls: true,
+				    shuffleOnLoop: true,
+				    loopOnPrevious: true
+				  	}
+
+
+			});
+			myPlaylist.shuffle();
+			
 		});
 		
-		
-	});
-	</script>
+		</script>
 
-<div id="jquery_jplayer_audio_1" class="jp-jplayer"></div>
+	<div id="jquery_jplayer_audio_1" class="jp-jplayer"></div>
 
-<div id="jp_container_audio_1" class="jp-flat-audio" role="application" aria-label="media player">
-	<div class="jp-play-control jp-control">
-		<button class="jp-play jp-button" role="button" aria-label="play" tabindex="0"></button>
-	</div>
-	<div class="jp-bar">
-		<div class="jp-seek-bar jp-seek-bar-display"></div>
-		<div class="jp-seek-bar">
-			<div class="jp-play-bar"></div>
-			<div class="jp-current"><span class="jp-title" aria-label="title"></span>
-			<span class="jp-artist" aria-label="artist"></span></div>
-			<div class="jp-timing"><span class="jp-duration" role="timer" aria-label="duration"></span></div>
+
+	<div id="jp_container_audio_1" class="jp-flat-audio" role="application" aria-label="media player">
+		<div class="jp-play-control jp-control">
+			<button class="jp-play jp-button" role="button" aria-label="play" tabindex="0"></button>
+		</div>
+		<div class="jp-bar">
+			<div class="jp-seek-bar jp-seek-bar-display"></div>
+			<div class="jp-seek-bar">
+				<div class="jp-play-bar"></div>
+				<div class="jp-playlist-item">
+					<div class="jp-playlist-item jp-playlist-current">
+						<span class="jp-title" aria-label="title"></span>
+						<span id="current-track" aria-label="artist">
+							<script type="text/javascript">
+								$("#jquery_jplayer_1").bind($.jPlayer.event.play, function(event) {
+							    $('#current-track').empty();
+							    $('#current-track').append(myPlaylist.playlist[myPlaylist.current].artist);
+								});
+							</script>
+						</span>
+					</div>
+					<div class="jp-timing"><span class="jp-duration" role="timer" aria-label="duration"></span></div>
+				</div>
+			</div>
+		</div>
+		<div class="jp-playlist">
+	    <ul>
+	      <li></li> <!-- Empty <li> so your HTML conforms with the W3C spec -->
+	    </ul>
+	  </div>
+		<div class="jp-no-solution">
+			Media Player Error<br />
+			Update your browser or Flash plugin
 		</div>
 	</div>
-	<div class="jp-playlist">
-    <ul>
-      <li></li> <!-- Empty <li> so your HTML conforms with the W3C spec -->
-    </ul>
-  </div>
-	<div class="jp-no-solution">
-		Media Player Error<br />
-		Update your browser or Flash plugin
-	</div>
-</div>
 
-</div>
+
 </body>
 </html>
