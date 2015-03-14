@@ -1,0 +1,6 @@
+{
+  "name": "happy-birthday-dad",
+  "root": "./",
+  "clean_urls": true,
+  "error_page": "error.html"
+}
