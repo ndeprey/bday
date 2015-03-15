@@ -9,21 +9,6 @@
 	src: url("../fonts/GearedSlab-Bold.ttf") format("opentype");
 }
 
-@font-face {
-font-family: CabinSketch;
-src: url("../fonts/CabinSketch-Bold.otf") format("opentype");
-}
-
-@font-face {
-	font-family: driftwood;
-	src: url("../fonts/driftwood.ttf") format("opentype");
-}
-
-@font-face {
-	font-family: Pinewood;
-	src: url("../fonts/Pinewood.ttf") format("opentype");
-}
-
 
 body {
 	margin:0;
