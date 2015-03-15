@@ -84,6 +84,7 @@ div.photocred {
 a.photocred {
 	color:white;
 	font-family: GearedSlab-Bold, 'Source Sans Pro', sans-serif;
+	text-shadow: 1px 1px black;
 }
 
 div.keyshortcuts{
