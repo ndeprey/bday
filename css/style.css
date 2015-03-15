@@ -101,6 +101,7 @@ ul.keyshortcuts{
 	text-align:left;
 	list-style-type: none;
 	margin: 0px;
+	text-shadow: 1px 1px black;
 }
 
 div.maintitle {
@@ -123,12 +124,13 @@ div.maintitle {
 }
 
 h1 {
-	background: url('../img/wood-pattern.jpg');
+	background: url('https://s3.amazonaws.com/Homestage/images/wood-pattern.jpg');
 	-webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family:GearedSlab-Bold;
 	font-size: 80px;
 	color: white;
+	
 
 	/*text-shadow: 2px 2px;*/
 }
@@ -142,6 +144,7 @@ h2 {
 	max-width:60%;
 	margin-left:auto;
 	margin-right:auto;
+	text-shadow: 1px 1px black;
 
 }
 
