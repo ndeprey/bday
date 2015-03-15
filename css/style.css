@@ -74,24 +74,48 @@ body {
 		margin-right: 60px;
 		margin-top: 120px;
 	}
+	div.keyshortcuts{
+		display: none;
+	}
+	ul.keyshortcuts{
+		display: none;
+	}
 }
 
 
 
 div.photocred {
-	width: 200px;
+	width: 160px;
 	position:fixed;
-	right:2px;
-	top:2px;
-	font-family: GearedSlab-Bold,'Source Sans Pro'; sans-serif;
+	left:2px;
+	top:4px;
+	font-family: GearedSlab-Bold,'Source Sans Pro', sans-serif;
 	font-size: 16px;
 	color: white;
-	text-align: right;
+	text-align: left;
+	display:block;
 }
 
 a.photocred {
-	color:black;
-	font-family: GearedSlab-Bold;
+	color:white;
+	font-family: GearedSlab-Bold, 'Source Sans Pro', sans-serif;
+}
+
+div.keyshortcuts{
+	display: block;
+	position: fixed;
+	width: 160px;
+	right: 2px;
+	top: 4px;
+}
+
+ul.keyshortcuts{
+	font-family: GearedSlab;
+	font-size: 16px;
+	color:white;
+	text-align:left;
+	list-style-type: none;
+	margin: 0px;
 }
 
 div.maintitle {
